@@ -1,0 +1,241 @@
+@charset "utf-8";
+/* CSS Document */
+html {
+	height:100%;
+}
+
+body {
+	background-color:#b0c4de;
+	background-image:url('../images/default.png');
+	height:calc(100% - 10px);
+	min-height:calc(100% - 10px);
+	overflow:hidden;
+	margin: 0px;
+}
+
+.appContainer{
+	width:100%;
+	height:100%;
+	overflow:hidden;
+	margin:0px;
+	margin-top:10px;
+}
+
+.content {
+	border:#000 thin solid;
+	background-color:#E4ECED;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	border-radius:5px 5px 0px 0px;
+	padding:5px;
+	border:1px solid .000;
+	box-shadow: 2px 2px 3px #000000;
+}
+
+.highlight{
+	background-color:#FC0;
+}
+
+.lobby {
+	top:25px;
+	left:25px;
+	min-height:300px;
+	min-width:400px;
+	width:500px;
+	height:300px;
+}
+
+.no-close .ui-dialog-titlebar-close {
+  display: none;
+}
+
+.ui-dialog-buttonpane .hide-buttons{
+	display: none;
+}
+
+.dialog-close-button{
+	float: right;
+	cursor: pointer;
+}
+
+.whisper {
+	top:310px;
+	left:5px;
+	min-height:250px;
+	min-width:250px;
+	width:250px;
+	height:250px;
+}
+
+.menu_content{
+	height:20px;
+	width:100%;
+	border-radius:5px 5px 0px 0px;
+}
+
+.menu_title{
+	float:left;
+	padding-left:5px;
+}
+
+.menu_buttons{
+	float:right;
+	padding-right:5px;	
+}
+
+.close_button{
+	width:18px;
+	height:16px;
+	display:inline-block;
+	background-image:url('../images/WindowsCloseButtonBlack_cropped.png');	
+}
+
+.minimize_button{
+	width:18px;
+	height:16px;
+	display:inline-block;
+	background-image:url('../images/MinimizeWindowButton.png');
+}
+
+.chat_content {
+	width:100%;
+	height:100%;
+}
+.chat_container {
+	float:left;
+	background-color:#EDF4F5;
+	width:69%;
+	height:94%;
+	border-radius:5px;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	padding:5px;
+}
+
+.whisper_chat_container {
+	float:left;
+	background-color:#EDF4F5;
+	width:100%;
+	height:92%;
+	border-radius:5px;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	padding:5px;
+}
+
+.user_list {
+	float:right;
+	background-color:#fffff0;
+	width:30%;
+	height:94%;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	padding:5px;
+	border-radius:5px;	
+}
+
+.chat_display {
+	float:left;
+	position:relative;
+	width:100%;
+	height:80%;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	padding:5px;
+	border-radius:5px;
+}
+
+.chat_control {
+	float:left;
+	position:relative;
+	width:100%;
+	height:20%;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	padding:5px;
+	border-radius:5px;
+}
+
+textarea
+{
+   	resize: none;
+   	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	padding:5px;
+	border-radius:5px;
+}
+
+.chat_zone{
+	width:100%;
+	height:100%;
+}
+
+.to_send{
+	float:left;
+	width:80%;
+	height:100%;
+}
+
+.send_button{
+	float:left;
+	width:20%;
+	height:100%;
+}
+
+.ui-dialog-titlebar{
+	display:none;
+}
+
+.front{
+	z-index:2;
+}
+
+ul{
+	list-style:none;
+	padding-left:0px;
+	margin-top:0px;
+	margin-bottom:0px;
+}
+
+.context_menu{
+	z-index:3;
+	background-color:#FFF;
+	border:thin solid #000;
+	min-width:150px;
+}
+
+.context_menu ul{
+	width:auto;
+}
+
+.context_menu li{
+	border-bottom:thin solid #000;
+	padding-left:3px;
+	padding-right:3px;
+}
+
+.topDrawer{
+	width:100%;
+	height:10px;
+	background-color:#000;
+	position:absolute;
+	z-index:3;
+	top:0;
+	left:0;
+}
+
+.topDrawer_innerObject{
+	width:30px;
+	height:30px;
+	display:inline-block;
+	margin-top: 5px;
+	margin-left: 10px;
+	margin-right: 10px;
+	position:relative;
+	top:-25px;
+	opacity:0;
+}
+
+.topDrawer_innerObject:hover{
+	box-shadow: 0 0 20px white;	
+}
