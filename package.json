@@ -1,0 +1,29 @@
+{
+  "name": "web-chat",
+  "version": "0.0.0",
+  "description": "javascript chat using websockets",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/beav13/Web-chat.git"
+  },
+  "author": "razvan placintar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/beav13/Web-chat/issues"
+  },
+  "homepage": "http://weekendboredom.no-ip.org/Web-chat/",
+  "dependencies": {
+    "websocket": "~1.0.8"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-uglify": "~0.5.1",
+    "grunt-contrib-copy": "~0.5.0",
+    "grunt-contrib-clean": "~0.6.0",
+    "grunt-contrib-concat": "~0.5.0"
+  }
+}
