@@ -457,9 +457,8 @@ function CommunicationManager(){
 	
 	this.initialize = function(){
 				
-		//socket = new WebSocket("ws://127.0.0.1:1337", "echo-protocol");
-		this.socket = new WebSocket("ws://razvanarenasumare.no-ip.biz:1337", "echo-protocol");
-		//this.socket = new WebSocket("ws://localhost:1337", "echo-protocol");
+		var socketPath = "ws://" + window.location.hostname + ":1337";
+		this.socket = new WebSocket(socketPath, "echo-protocol");
 		
 		var self = this;
 		
@@ -706,7 +705,7 @@ function CommandLauncher(){
 		var ifrm = document.createElement("IFRAME"); 
 	    //ifrm.setAttribute("src", "http://localhost/tictactoe/tictactoe.html?gameMode=internet"); 
 		var opponentId = (window.user.id == commandParameters.initiator)?commandParameters.target:commandParameters.initiator;
-		var src = "../tictactoe/tictactoe.html?gameMode=internet&me=" + window.user.id + "&opponent=" + opponentId + "&gameType=3x3";
+		var src = "../Tictactoe/tictactoe.html?gameMode=internet&me=" + window.user.id + "&opponent=" + opponentId + "&gameType=3x3";
 		//alert(src);
 		ifrm.setAttribute("src", src); 
 	    ifrm.style.width = 908+"px"; 
@@ -731,7 +730,7 @@ function CommandLauncher(){
 		var ifrm = document.createElement("IFRAME"); 
 	    //ifrm.setAttribute("src", "http://localhost/tictactoe/tictactoe.html?gameMode=internet"); 
 		var opponentId = (window.user.id == commandParameters.initiator)?commandParameters.target:commandParameters.initiator;
-		var src = "../tictactoe/tictactoe.html?gameMode=internet&me=" + window.user.id + "&opponent=" + opponentId + "&gameType=10x10";
+		var src = "../Tictactoe/tictactoe.html?gameMode=internet&me=" + window.user.id + "&opponent=" + opponentId + "&gameType=10x10";
 		//alert(src);
 		ifrm.setAttribute("src", src); 
 	    ifrm.style.width = 733+"px"; 
@@ -756,7 +755,7 @@ function CommandLauncher(){
 		var ifrm = document.createElement("IFRAME");
 	    //ifrm.setAttribute("src", "http://localhost/tictactoe/tictactoe.html?gameMode=internet"); 
 		var opponentId = (window.user.id == commandParameters.initiator)?commandParameters.target:commandParameters.initiator;
-		var src = "../pong/pong.html?gameMode=internet&me=" + window.user.id + "&opponent=" + opponentId;
+		var src = "../Pong/pong.html?gameMode=internet&me=" + window.user.id + "&opponent=" + opponentId;
 		//alert(src);
 		ifrm.setAttribute("src", src); 
 	    ifrm.style.width = 930+"px"; 
@@ -815,12 +814,12 @@ function TopDrawer(){
 	var innerObjectListData = [
 							{imgLocation:"url('images/30x30_tictactoe_icon.png')",
 							id:"ticTacToe_innerObject",
-							lnk:"../tictactoe/index.html",
+							lnk:"../Tictactoe/index.html",
 							title:"Tic Tac Toe"
 							},
 							{imgLocation:"url('images/pong_icon.png')",
 							id:"pong_innerObject",
-							lnk:"../pong/index.html",
+							lnk:"../Pong/index.html",
 							title:"Pong"
 							},							
 							];
